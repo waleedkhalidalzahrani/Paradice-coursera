@@ -1,0 +1,244 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(0, 0%, 92%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+header .cart {
+    font-size: 35px;
+    color: white;
+    margin-left: auto;
+    position: relative;
+}
+
+header .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+header h3 {
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product button {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 1s;
+}
+
+.product button:hover {
+    background-color: #555;
+    transform: scale(1.10);
+}
+
+.product img {
+    width: 90%;
+    border: none;
+    border-radius: 25px;
+}
+
+.product h3 {
+    color: #333;
+}
+
+.cart-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-item h4 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #555;
+}
+
+/* Style for the cart page */
+.cart-item {
+    width: 700px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.cart-item h4 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 2px;
+}
+
+.cart-item button:hover {
+    background-color: #555;
+}
+
+.cart-item .remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    
+}
+#product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#total-price-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#total-price-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.checkout{
+    display: flex;
+    justify-content: center;
+}
+.checkout a{
+    align-items: center;
+    padding: 10px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}
